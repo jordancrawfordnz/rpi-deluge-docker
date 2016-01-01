@@ -27,6 +27,7 @@ Use this command to run:
 ``docker run -d -v /home/pi/deluge/config:/config -v /home/pi/deluge/data:/data -p 58846:58846 -p 8112:8112 --name=deluge jordancrawford/rpi-deluge``
 
 **Understanding the options**
+
 - ``-d``: runs detached, so the Docker instance just runs in the background.
 
 - ``-v /home/pi/deluge/config:/config``: sets up your host's ``/home/pi/deluge/config`` directory to map to the ``/config`` directory in the container. Docker will make this folder if it doesn't exist on your host system. This can be moved to anywhere on your host system, but the Docker image needs ``/config`` to exist! This is where you will go if you want to manually change any deluge configuration.
