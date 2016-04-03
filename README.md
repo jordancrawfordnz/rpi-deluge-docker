@@ -58,5 +58,4 @@ Password: deluge
 Password: deluge
 
 #### TODO
-- Update to the latest deluge version
 - Potentially allow more configuration options on run, such as defining the default username and password to use.
