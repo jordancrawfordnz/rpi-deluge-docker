@@ -1,3 +1,9 @@
+[View on Docker Hub](https://hub.docker.com/r/jordancrawford/rpi-deluge/)
+
+[View on BitBucket](https://bitbucket.org/jordancrawfordnz/rpi-deluge-docker)
+
+---
+
 ### RPi Deluge Docker
 
 #### What is Deluge?
