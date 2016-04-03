@@ -3,6 +3,12 @@
 CONFIGDIR=/config
 DATADIR=/data
 
+echo "Setting owner for config and data directories."
+mkdir -p $CONFIGDIR
+mkdir -p $DATADIR
+chown -R deluge $CONFIGDIR
+chown deluge $DATADIR
+
 if [ ! -d $CONFIGDIR ]; then
         echo "The config directory does not exist! Please add it as a volume."
         exit 1
@@ -44,6 +50,5 @@ if [ $AUTHMISSING ]; then
 fi
 
 echo "Starting deluged and deluge-web."
-
-deluged -c $CONFIGDIR
-deluge-web -c $CONFIGDIR
+su -s /bin/bash deluge -c 'deluged -c /config'
+su -s /bin/bash deluge -c 'deluge-web -c /config'
