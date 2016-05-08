@@ -1,7 +1,7 @@
 # Sets up a Deluge server and web client.
 
 FROM resin/rpi-raspbian:jessie
-MAINTAINER Jordan Crawford <me@jordancrawford.co.nz>
+MAINTAINER Jordan Crawford <jordan@crawford.kiwi>
 
 # Deluge version.
 ARG DELUGE_VERSION=1.3.12
