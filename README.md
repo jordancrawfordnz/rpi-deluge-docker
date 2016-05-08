@@ -11,6 +11,8 @@ Deluge is a torrent client. One of the best things about it is its highly client
 
 The Deluge website: http://deluge-torrent.org/
 
+### [Using this container as part of a Raspberry Pi home server](https://jordancrawford.kiwi/rpi-home-server/)
+
 #### What does this image do?
 - sets up deluged for remote access, default directories and gives a default username and password
 - runs deluged and deluge-web
