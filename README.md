@@ -1,36 +1,36 @@
-[View on Docker Hub](https://hub.docker.com/r/jordancrawford/rpi-deluge/)
+[View on GitHub](https://github.com/jordancrawfordnz/rpi-deluge-docker)
 
-[View on BitBucket](https://bitbucket.org/jordancrawfordnz/rpi-deluge-docker)
+[View on Docker Hub](https://hub.docker.com/r/jordancrawford/rpi-deluge/)
 
 ---
 
-### RPi Deluge Docker
+# RPi Deluge Docker
 
-#### What is Deluge?
+## What is Deluge?
 Deluge is a torrent client. One of the best things about it is its highly client-server oriented, allowing you to remote control a deluge server from your desktop deluge app or using the web interface (deluge-web).
 
 The Deluge website: http://deluge-torrent.org/
 
 ### [Using this container as part of a Raspberry Pi home server](https://jordancrawford.kiwi/rpi-home-server/)
 
-#### What does this image do?
+## What does this image do?
 - sets up deluged for remote access, default directories and gives a default username and password
 - runs deluged and deluge-web
 
-#### Tested On
+## Tested On
 - Raspberry Pi 2 running HypriotOS (should also work on the Raspberry Pi 1)
 
-#### Getting Setup
+## Getting Setup
 
-##### Building
+### Building
 Pull the repository and run: ``docker build -t jordancrawford/rpi-deluge .``
 
-##### Pulling from Docker Hub
+### Pulling from Docker Hub
 An image is available at: https://hub.docker.com/r/jordancrawford/rpi-deluge/
 
 Run ``docker pull jordancrawford/rpi-deluge`` to grab this copy.
 
-##### Running
+### Running
 Use this command to run:
 ``docker run -d -v /home/pi/deluge/config:/config -v /home/pi/deluge/data:/data -p 58846:58846 -p 8112:8112 --name=deluge jordancrawford/rpi-deluge``
 
@@ -54,7 +54,7 @@ The ``docker run`` documentation is very helpful, https://docs.docker.com/engine
 
 - Login to deluge-web and change the password (first login will prompt you to do this). The deluge-web password is independent from the deluged password.
 
-#### Default Passwords
+## Default Passwords
 - remote access from a Deluge client:
 
 Username: deluge
@@ -65,5 +65,5 @@ Password: deluge
 
 Password: deluge
 
-#### TODO
+## TODO
 - Potentially allow more configuration options on run, such as defining the default username and password to use.
