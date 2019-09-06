@@ -14,8 +14,7 @@ RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Deluge version.
-ARG DELUGE_VERSION=1.3.13
-
+ARG DELUGE_VERSION=2.0.3
 # Install Deluge.
 WORKDIR /
 RUN wget http://download.deluge-torrent.org/source/deluge-${DELUGE_VERSION}.tar.gz
