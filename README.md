@@ -1,6 +1,4 @@
-[View on GitHub](https://github.com/jordancrawfordnz/rpi-deluge-docker)
-
-[View on Docker Hub](https://hub.docker.com/r/jordancrawford/rpi-deluge/)
+**This repo is archived.** It's not being maintained and may no longer work. I recommend using [linuxserver/deluge](https://hub.docker.com/r/linuxserver/deluge) instead.
 
 ---
 
